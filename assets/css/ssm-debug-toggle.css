@@ -1,0 +1,108 @@
+/**
+ * File: assets/css/ssm-debug-toggle.css
+ * کہاں پیسٹ کریں: فائل کے آخر میں
+ * Part 1 — Buttons + Layout (Debug ON / OFF)
+ */
+
+/* Namespace root */
+.ssm-debug-wrap {
+    --ssm-primary-blue: #2271b1;
+    --ssm-primary-blue-hover: #185a8c;
+
+    --ssm-danger-red: #d63638;
+    --ssm-danger-red-hover: #b02b2d;
+
+    --ssm-border: #dcdcdc;
+    --ssm-bg: #ffffff;
+    --ssm-radius: 8px;
+    --ssm-padding: 14px;
+    --ssm-text: #222;
+}
+
+/* Card / Container */
+.ssm-debug-card {
+    background: var(--ssm-bg);
+    padding: var(--ssm-padding);
+    border: 1px solid var(--ssm-border);
+    border-radius: var(--ssm-radius);
+    margin-top: 20px;
+}
+
+/* Status Row */
+.ssm-debug-status-row {
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ssm-text);
+}
+
+/* Actions Row */
+.ssm-debug-actions-row {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+/* Blue Button — Debug ON */
+.ssm-debug-btn-on {
+    background: var(--ssm-primary-blue) !important;
+    border-color: var(--ssm-primary-blue) !important;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 10px 20px !important;
+    border-radius: var(--ssm-radius) !important;
+}
+
+.ssm-debug-btn-on:hover,
+.ssm-debug-btn-on:focus {
+    background: var(--ssm-primary-blue-hover) !important;
+    border-color: var(--ssm-primary-blue-hover) !important;
+    color: #fff !important;
+}
+
+/* Red Button — Debug OFF */
+.ssm-debug-btn-off {
+    background: var(--ssm-danger-red) !important;
+    border-color: var(--ssm-danger-red) !important;
+    color: #fff !important;
+    font-weight: 600;
+    padding: 10px 20px !important;
+    border-radius: var(--ssm-radius) !important;
+}
+
+.ssm-debug-btn-off:hover,
+.ssm-debug-btn-off:focus {
+    background: var(--ssm-danger-red-hover) !important;
+    border-color: var(--ssm-danger-red-hover) !important;
+    color: #fff !important;
+}
+
+/* Message area */
+.ssm-debug-message {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: var(--ssm-radius);
+    display: inline-block;
+}
+
+.ssm-debug-message-success {
+    background: #e6f7e6;
+    color: #0d6c0d;
+}
+
+.ssm-debug-message-error {
+    background: #fdeaea;
+    color: #a30000;
+}
+
+.ssm-debug-message-info {
+    background: #eef5ff;
+    color: #0a3d91;
+}
+
+/* Busy state (loading) */
+.ssm-debug-busy {
+    opacity: 0.6;
+    pointer-events: none;
+}
